@@ -67,3 +67,8 @@ curl -X POST http://localhost:3000/api/v1/auth/refresh \
 
 [Скачать коллекцию Insomnia](./Insomnia_collection.json)
 
+# Запуск тестов
+
+```bash
+bundle exec rspec
+```
