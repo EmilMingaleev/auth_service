@@ -47,7 +47,7 @@ curl -X POST http://localhost:3000/api/v1/auth/token \
     "user_id": "user-123"
 }'
 ```
-Привет ответа
+Пример ответа
 ```bash
 {
 	"access": "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjoidXNlci0xMjMiLCJpcCI6IjEyNy4wLjAuMSIsInRva2VuX3BhaXJfaWQiOiI3MjA5ZTY5Ni0xMGFjLTRmZWYtOTRhMS01NWVhMDNhZGE3OTQiLCJleHAiOjE3NDQ3OTAwOTZ9.zOE0vGB4eAayzA0C3cqXpjsAF39Imnw3waHy0zlL2QIQZJ744jb-UFtfim8kRNPtU9A4yoRPlem3-MNK5w-ZGQ",
