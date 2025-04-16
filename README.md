@@ -39,7 +39,7 @@ sudo docker-compose up --build -d
 sudo docker-compose exec web bin/rails db:migrate
 ```
 
-Примеры запросов с curl
+## Примеры запросов с curl
 ```bash
 curl -X POST http://localhost:3000/api/v1/auth/token \
   -H "Content-Type: application/json" \
