@@ -1,0 +1,76 @@
+type: collection.insomnia.rest/5.0
+name: auth collection
+meta:
+  id: wrk_c585865995c640f48cfe5581a6028967
+  created: 1744830430877
+  modified: 1744830430877
+collection:
+  - url: http://localhost:3000/api/v1/auth/token
+    name: Token
+    meta:
+      id: req_f2baf7d7776942b39fe7b68e492397ef
+      created: 1744718490545
+      modified: 1744788219620
+      isPrivate: false
+      sortKey: -1744718490545
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - name: user_id
+          value: user-123
+          disabled: false
+          id: pair_03908a3848494d7695997d5fd88f51f2
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/v1/auth/refresh
+    name: Refresh token
+    meta:
+      id: req_c5732de6b0504dc483a08aa95593f42b
+      created: 1744718568794
+      modified: 1744832141934
+      isPrivate: false
+      sortKey: -1744718568794
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"access": "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjoidXNlci0xMjMiLCJpcCI6IjEyNy4wLjAuMSIsInRva2VuX3BhaXJfaWQiOiI3OThmOGJiOC0yZDUxLTRhZjMtOTM0OS0xNGJjN2M0ZjA3NmEiLCJleHAiOjE3NDQ4MzI1MjN9.gD4XcHyB5vuLPwaLEMJTir_xRop1zp1kwzx0tMDrR3ECkXhihdFK7Z7MMFatjnhz1-B5_WPYAtvPs_I0bhx3xA",
+        	"refresh": "gk3o6qmDIGEoxL6U7_Lw3YSc-oNZKpJucF0w8CkfYGjtX-3vbk-B9jFH57L-0ddMhWRrVsqI6U0EnzqUDW9vzg"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e6c6be8b3966418dbd943fe11b029f25
+    created: 1744718480631
+    modified: 1744718480631
+environments:
+  name: Base Environment
+  meta:
+    id: env_8c880e50b97e414a83503f5a1e5cc554
+    created: 1744718480623
+    modified: 1744718480623
+    isPrivate: false
