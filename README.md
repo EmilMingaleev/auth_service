@@ -29,6 +29,15 @@ rails db:migrate
 ```bash
 bin/rails s
 ```
+## Запуск через Docker
+```bash
+sudo docker-compose up --build -d
+```
+
+Выполните миграции
+```bash
+sudo docker-compose exec web bin/rails db:migrate
+```
 
 Примеры запросов с curl
 ```bash
