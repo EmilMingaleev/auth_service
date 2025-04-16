@@ -1,11 +1,9 @@
 module Auth
   class RefreshTokens::ValidateRefreshToken
     include Interactor
+    delegate :refresh_token, :user_id, to: :context
 
     def call
-      refresh_token = context.refresh_token
-      user_id = context.user_id
-
       refresh_record = RefreshToken
                          .where(user_id: user_id, revoked: false)
                          .order(created_at: :desc)

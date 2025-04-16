@@ -1,9 +1,9 @@
 module Auth
   class RefreshTokens::DecodeAccessToken
     include Interactor
+    delegate :access_token, :user_id, :token_ip, :token_pair_id, to: :context
 
     def call
-      access_token = context.access_token
       begin
         decoded = JWT.decode(
           access_token,

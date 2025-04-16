@@ -1,9 +1,10 @@
 module Auth
   class RefreshTokens::RevokeOldRefreshToken
     include Interactor
+    delegate :refresh_record, to: :context
 
     def call
-      context.refresh_record.update!(revoked: true)
+      refresh_record.update!(revoked: true)
     end
   end
 end
