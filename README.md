@@ -65,5 +65,5 @@ curl -X POST http://localhost:3000/api/v1/auth/refresh \
 # Пример запросов с Insomnia
 Скачайте коллекцию Insomnia:
 
-[Скачать коллекцию Insomnia](./Insomnia_2025-04-16.yaml)
+[Скачать коллекцию Insomnia](./Insomnia_collection.json)
 
