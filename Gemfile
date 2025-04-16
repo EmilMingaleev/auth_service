@@ -32,4 +32,4 @@ gem "active_model_serializers"
 gem "bcrypt"
 gem "interactor"
 gem "jwt"
-gem 'pry'
+gem "pry"
